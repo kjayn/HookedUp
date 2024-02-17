@@ -1,0 +1,53 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .img-fluid {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2); /* Adjust the shadow properties as needed */
+}
+.img-fluid img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-img {
+    width: 100px; /* Set the width to ensure the image is a square */
+    height: 100px; /* Set the height to ensure the image is a square */
+    object-fit: cover; /* Maintain aspect ratio and cover any overflow */
+    border-radius: 50%; /* Make the image appear as a circle */
+}
+
+/* Custom CSS to style carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Change the background color to black */
+    color: white; /* Change the color of the arrow to white */
+}
+
+/* Optional: Adjust size and padding of carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust width as needed */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.text{
+    font-size: 20pt;
+}
